@@ -23,7 +23,7 @@
         </div>
         <div>    
             <label class="mt-3">囲炉裏テーブル</label>
-            <select name="fukkin">
+            <select name="table">
             <option value="option1">0</option>
             <option value="option2">1</option>
             <option value="option3">2</option>
@@ -34,7 +34,7 @@
         </div>
         <div>    
             <label class="mt-3">バーベキューコンロ</label>
-            <select name="fukkin">
+            <select name="konro">
             <option value="option1">0</option>
             <option value="option2">1</option>
             <option value="option3">2</option>
@@ -45,7 +45,7 @@
         </div>
          <div>    
             <label class="mt-3">バーベキュー用固形燃料</label>
-            <select name="fukkin">
+            <select name="fuel">
             <option value="option1">0</option>
             <option value="option2">1</option>
             <option value="option3">2</option>
@@ -61,7 +61,7 @@
         </div>
         <div>    
             <label class="mt-3">アウトドアチェア</label>
-            <select name="fukkin">
+            <select name="chair">
             <option value="option3">0</option>
             <option value="option1">1</option>
             <option value="option2">2</option>
@@ -77,7 +77,7 @@
         </div>
          <div>    
             <label class="mt-3">日除けタープ</label>
-            <select name="fukkin">
+            <select name="tarp">
             <option value="option1">0</option>
             <option value="option2">1</option>
             <option value="option3">2</option>
@@ -140,7 +140,7 @@
                 const fukkin  = $('input[name="fukkin"]').val();
                 const haikin  = $('input[name="haikin"]').val();
                 const sukuwat = $('input[name="sukuwat"]').val();
-                const msg = `お名前：${name}\n配達先：${udetate}\n配達希望日：${fukkin}\n注文数量：${haikin}\nその他：${sukuwat}`;
+                const msg = `氏名：${name}\nレンタル希望日：${udetate}\n囲炉裏テーブル：${table}\nバーベキューコンロ：${konro}\n固形燃料：${fuel}\nアウトドアチェア：${chair}\nタープ：${tarp}\n宅配先住所：${haikin}\nその他：${sukuwat}`;
                 sendText(msg);
                 return false;
             });
